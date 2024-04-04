@@ -1,0 +1,23 @@
+Implementasi Verifikasi NAT dengan Cisco Packet Tracer
+
+Pendahuluan
+Tujuan praktikum ini adalah memverifikasi penggunaan Network Address Translation (NAT) dalam jaringan menggunakan Cisco Packet Tracer. Fokus kami adalah memastikan bahwa ketika host di VLAN 2 atau VLAN 3 mengakses alamat domain jarkom.com, NAT berfungsi dengan baik dan hasilnya dapat dilihat pada ROUTER_I.
+
+Langkah-langkah Praktikum
+Konfigurasi VLAN pada Switches:
+
+Buat VLAN 2 dan VLAN 3 di setiap switch. Pastikan VLAN telah diberi nama dengan benar. Konfigurasi NAT pada Router:
+
+Tetapkan NAT sebagai sumber inside. Definisikan aturan NAT untuk meneruskan paket melalui interface FastEthernet0/0. Pastikan access-list mengizinkan lalu lintas dari semua host (permit any). Verifikasi Konfigurasi:
+
+Periksa konfigurasi VLAN menggunakan perintah "show ip vlan" di setiap switch. Gunakan "show running-config" pada SWITCH dan ROUTER_I untuk memastikan konfigurasi yang tepat. Periksa status NAT menggunakan "show ip nat statistics" pada ROUTER_I. Pengiriman Paket Data:
+
+Kirim paket data dari sumber ke tujuan pada setiap PC, baik dalam VLAN yang sama maupun berbeda. Pastikan akses ke jarkom.com dari host dalam VLAN 2 atau VLAN 3 berhasil dan NAT berfungsi dengan benar.
+
+https://private-user-images.githubusercontent.com/126375451/312867423-e83e83a0-e5e7-43a4-adc4-67b8e0a9d28b.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTIyMDEzMTcsIm5iZiI6MTcxMjIwMTAxNywicGF0aCI6Ii8xMjYzNzU0NTEvMzEyODY3NDIzLWU4M2U4M2EwLWU1ZTctNDNhNC1hZGM0LTY3YjhlMGE5ZDI4Yi5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MDRUMDMyMzM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NGEyMDYyYjNmMDVmYjU4N2NmZTZkYTVlYWE2YjhkZjU0MjI1Zjk2MGM1MTA5MDY2YzM1NWQ5YjM3ZjkyODE0YiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.a3l9pIJkfpDo0X1q7c-rvMeAs5S0y67h7zbX3WFkH-M
+
+Kesimpulan
+Dengan mengikuti langkah-langkah modul secara cermat, kami berhasil memverifikasi penggunaan NAT dalam jaringan kami. Setiap langkah diikuti dengan teliti untuk memastikan konektivitas antara host dalam VLAN yang berbeda berjalan dengan baik, dan NAT beroperasi sesuai yang diharapkan.
+
+https://private-user-images.githubusercontent.com/126375451/312867486-4124014a-e8b6-4ca2-ae24-2b57756b09ed.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTIyMDEzMTcsIm5iZiI6MTcxMjIwMTAxNywicGF0aCI6Ii8xMjYzNzU0NTEvMzEyODY3NDg2LTQxMjQwMTRhLWU4YjYtNGNhMi1hZTI0LTJiNTc3NTZiMDllZC5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MDRUMDMyMzM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzZkM2U3M2QwMTBmYmI0MjdiNzk2OTk5MDFhMWRmYmM3NWRiMTIxNjIxZjE2MDhkN2ZlN2MyOGM0ZWU0NDlhYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.GHALybZQFBiCgxBOHfSLn73CnOhw-QE7O_VvTHFub78
+
